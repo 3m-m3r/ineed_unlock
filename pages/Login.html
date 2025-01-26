@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="lagom-dark-mode">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <div class="app-main">
+      <div class="main-body main-body-has-sidebar main-body-has-sidebar-left">
+        <div class="main-body-sidebar main-body-sidebar-secondary">
+          <div class="sidebar-logo logo-container">
+            <a href="/lagom/index.php" class="logo logo-login">
+              <img
+                class="logo-login-img"
+                src="/lagom/templates/lagom2/assets/img/logo/logo_big_inverse.987257187.svg"
+                alt="RS STUDIO"
+                title="RS STUDIO"
+              />
+            </a>
+          </div>
+          <div class="sidebar-content">
+            <h2 class="sidebar-title">What's New</h2>
+            <div class="sidebar-swiper swiper-container">
+              <div class="swiper-wrapper">
+                <div class="sidebar-news swiper-slide">
+                  <span class="sidebar-news-date">Dec 13, 2021</span>
+                  <a
+                    href="/lagom/announcements/12/Presentation-Article-Content.html"
+                    class="sidebar-news-title h3"
+                  >
+                    Presentation Article Content
+                  </a>
+                  <div class="sidebar-news-desc">
+                    <p>
+                      This example article presents different elements that can
+                      be added in WHMCS using the "Rich-Text Editor". Phasellus
+                      risus nibh, Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-body-content">
+          <div class="login login-lg">
+            <div class="login-wrapper">
+              <div class="login-body register" id="registration">
+                <h1 class="login-title">Register</h1>
+
+                <form method="post" action="#" class="loginForm">
+                  <input
+                    type="hidden"
+                    name="token"
+                    value="66f0f31a75b336e82d3ff89eac24adbedc3bec80"
+                  />
+                  <input type="hidden" name="register" value="true" />
+
+                  <div class="section section-sm" id="containerNewUserSignup">
+                    <div class="section-header">
+                      <h2 class="section-title">Personal Information</h2>
+                    </div>
+                    <div class="section-body" id="personalInformation">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="inputEmail" class="label-required"
+                              >Email Address</label
+                            >
+                            <input
+                              type="email"
+                              name="email"
+                              id="inputEmail"
+                              class="form-control"
+                              placeholder="info@gmail.com"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div
+                            class="form-group has-feedback"
+                            id="newPassword2"
+                          >
+                            <label
+                              for="inputNewPassword2"
+                              class="label-required"
+                              >Confirm Password</label
+                            >
+                            <input
+                              type="password"
+                              name="password2"
+                              id="inputNewPassword2"
+                              class="form-control"
+                              autocomplete="off"
+                              placeholder="********"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="section section-sm">
+                    <div class="section-header">
+                      <h2 class="section-title">Join Our Mailing List</h2>
+                      <p class="section-desc">
+                        We would like to send you occasional news, information,
+                        and special offers by email. Choose below whether you
+                        want to join our mailing list. You can unsubscribe at
+                        any time.
+                      </p>
+                    </div>
+                    <div class="panel panel-switch m-w-xs">
+                      <div class="panel-body">
+                        <span class="switch-label">Receive Emails: </span>
+                        <label class="switch switch--lg switch--text">
+                          <input
+                            class="switch__checkbox"
+                            type="checkbox"
+                            name="marketingoptin"
+                            value="1"
+                            checked
+                          />
+                          <span class="switch__container">
+                            <span class="switch__handle"></span>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="section section-sm">
+                    <div class="section-body">
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            class="icheck-control accepttos"
+                            type="checkbox"
+                            name="accepttos"
+                            required
+                          />
+                          <span class="label-required"
+                            >I have read and agree to the
+                            <a
+                              href="http://www.example.com/tos.html"
+                              target="_blank"
+                              >Terms of Service</a
+                            ></span
+                          >
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-actions">
+                    <button
+                      type="submit"
+                      class="btn btn-lg btn-primary btn-block"
+                    >
+                      <span class="btn-text">Register</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <br />
+
+              <div class="login-footer">
+                <div class="text-center text-light">
+                  Already registered? <a href="./sign_up.html">Sign In</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

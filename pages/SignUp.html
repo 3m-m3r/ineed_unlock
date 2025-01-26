@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" class="lagom-dark-mode">
+§
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style/style.css" />
+
+  <!--   CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+
+  <!--   JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+
+<body>
+
+  <div class="app-main">
+    <div class="main-body main-body-has-sidebar main-body-has-sidebar-left">
+      <div class="main-body-sidebar main-body-sidebar-secondary">
+        <div class="sidebar-logo logo-container">
+          <a class="logo logo-login"
+            logo-login-light-mode="/lagom/templates/lagom2/assets/img/logo/logo_big_inverse.987257187.svg"
+            logo-login-dark-mode="/lagom/templates/lagom2/assets/img/logo/logo_big_inverse.987257187.svg" href="#"><img
+              class="logo-login-img" src="/lagom/templates/lagom2/assets/img/logo/logo_big_inverse.987257187.svg"
+              title="RS STUDIO" alt="RS STUDIO" /></a>
+        </div>
+        <div class="sidebar-content">
+          <h2 class="sidebar-title">What's new</h2>
+          <div class="sidebar-swiper swiper-container">
+            <div class="swiper-wrapper">
+              <div class="sidebar-news swiper-slide">
+                <span class="sidebar-news-date">Dec 13, 2021</span>
+                <a class="sidebar-news-title h3" href="#">Presentation Article Content</a>
+                <div class="sidebar-news-desc">
+                  <p>
+                    This is example artcile, designed to present diffrent
+                    article elements, which can be added in WHMCS usign
+                    "Rich-Text Editor". Phasellus risus nibh Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Fusce finibus orci
+                    sem. Sed vitae tellus ultrices, porta augue eu, sodal...
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="main-body-content">
+        <div class="login login-lg">
+
+
+          <div class="login-wrapper">
+            <div class="login-body register" id="registration">
+              <h1 class="login-title">Register</h1>
+
+              <form method="post" class="loginForm" action="/lagom/register.php" role="form" name="orderfrm"
+                id="frmCheckout">
+                <input type="hidden" name="token" value="66f0f31a75b336e82d3ff89eac24adbedc3bec80" />
+                <input type="hidden" name="register" value="true" />
+                <div class="section section-sm" id="containerNewUserSignup">
+                  <div class="section section-sm">
+                    <div class="section-header">
+                      <h2 class="section-title">Personal Information</h2>
+                    </div>
+                    <div class="section-body" id="personalInformation">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="inputFirstName" class="label-required">
+                              First Name
+                            </label>
+                            <input type="text" name="firstname" id="inputFirstName" class="form-control"
+                              placeholder="Ammar " value="" required autofocus />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="inputLastName" class="label-required">
+                              Last Name
+                            </label>
+                            <input type="text" name="lastname" id="inputLastName" class="form-control"
+                              placeholder="Ahmed" value="" required />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="inputEmail" class="label-required">
+                              Email Address
+                            </label>
+                            <input type="email" name="email" id="inputEmail" class="form-control"
+                              placeholder="info@gmail.com" value="" />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="inputPhone" class="label-required">
+                              Phone Number
+                            </label>
+                            <input type="tel" name="phonenumber" id="inputPhone" class="form-control" value="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section section-sm" id="containerNewUserSecurity">
+                  <div id="containerPassword" class="row">
+                    <div id="passwdFeedback" style="display: none"
+                      class="alert alert-lagom alert-info text-center col-md-12"></div>
+                    <div class="col-md-6">
+                      <div class="form-group has-feedback" id="newPassword1">
+                        <div class="password-content password-content-top password-content-group">
+
+
+                          <div class="progress m-t-0" id="passwordStrengthBar" style="display: none">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                              aria-valuemax="100">
+
+
+                            </div>
+                          </div>
+
+
+                          Password
+                          </span>
+                        </div>
+                        <div class="input-password-strenght">
+                          <input type="password" name="password" id="inputNewPassword1" data-error-threshold="50"
+                            data-warning-threshold="75" class="form-control" placeholder="********"
+                            autocomplete="off" />
+                        </div>
+
+
+
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group has-feedback" id="newPassword2">
+                        <label for="inputNewPassword2" class="label-required">
+                          Confirm Password
+                        </label>
+                        <input type="password" name="password2" placeholder="********" id="inputNewPassword2"
+                          class="form-control" placeholder="" autocomplete="off" />
+                        <div id="inputNewPassword2Msg"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section section-sm">
+                  <div class="section-header">
+                    <h2 class="section-title">Join our mailing list</h2>
+                    <p class="section-desc">
+                      We would like to send you occasional news, information
+                      and special offers by email. Choose below whether you
+                      want to join our mailing list. You can unsubscribe at
+                      any time.
+                    </p>
+                  </div>
+                  <div class="panel panel-switch m-w-xs">
+                    <div class="panel-body">
+                      <span class="switch-label">Receive Emails: </span>
+                      <label class="switch switch--lg switch--text">
+                        <input class="switch__checkbox" type="checkbox" name="marketingoptin" value="1" checked />
+                        <span class="switch__container"><span class="switch__handle"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="section section-sm">
+                  <div class="section-body">
+                    <div class="checkbox">
+                      <label>
+                        <input class="icheck-control accepttos" type="checkbox" name="accepttos" />
+                        <span class="label-required">I have read and agree to the
+                          <a href="#" target="_blank">Terms of Service</a></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-lg btn-primary btn-block">
+                    <span class="btn-text"> Register </span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <br>
+            <div class="login-footer">
+              <div class="text-center text-light">
+                Already registered with us?
+                <a href="./log_in.html">Sign In</a>
+                <span class="text-lowercase">Or</span>
+                <a href="./sign_up.html">Reset Password</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    var input = document.querySelector("#inputPhone");
+    var iti = intlTelInput(input, {
+      initialCountry: "auto", // تحديد الدولة تلقائيًا بناءً على الـ IP
+      geoIpLookup: function (callback) {
+        fetch("https://ipinfo.io?token=YOUR_API_KEY") // تأكد من استبدال YOUR_API_KEY بـ API Key حقيقي
+          .then(response => response.json())
+          .then(data => {
+            callback(data.country);
+          })
+          .catch(error => {
+            callback('us'); // في حال حدوث خطأ
+          });
+      },
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const passwordInput = document.getElementById("inputNewPassword1");
+      const confirmPasswordInput = document.getElementById("inputNewPassword2");
+
+      // زر العين لإظهار/إخفاء كلمة السر
+      const togglePassword = document.createElement('button');
+      togglePassword.textContent = "👁️";
+      togglePassword.type = "button";
+      togglePassword.classList.add('toggle-password');
+      passwordInput.parentNode.appendChild(togglePassword);
+
+      togglePassword.addEventListener('click', function () {
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+        } else {
+          passwordInput.type = "password";
+        }
+      });
+
+      // زر العين لإظهار/إخفاء كلمة السر في input تأكيد كلمة السر
+      const toggleConfirmPassword = document.createElement('button');
+      toggleConfirmPassword.textContent = "👁️";
+      toggleConfirmPassword.type = "button";
+      toggleConfirmPassword.classList.add('toggle-password');
+      confirmPasswordInput.parentNode.appendChild(toggleConfirmPassword);
+
+      toggleConfirmPassword.addEventListener('click', function () {
+        if (confirmPasswordInput.type === "password") {
+          confirmPasswordInput.type = "text";
+        } else {
+          confirmPasswordInput.type = "password";
+        }
+      });
+
+      // التحقق من قوة كلمة السر
+      const passwordStrengthContainer = document.createElement('span');
+      passwordStrengthContainer.id = "passwordStrengthContainer";
+      passwordInput.parentNode.appendChild(passwordStrengthContainer);
+
+      passwordInput.addEventListener('input', function () {
+        const password = passwordInput.value;
+        const strength = checkPasswordStrength(password);
+
+        let passwordStrengthText = '';
+        let passwordStrengthClass = '';
+
+        if (strength < 50) {
+          passwordStrengthText = 'Weak password';
+          passwordStrengthClass = 'alert-danger';
+        } else if (strength < 75) {
+          passwordStrengthText = 'Medium password';
+          passwordStrengthClass = 'alert-warning';
+        } else {
+          passwordStrengthText = 'Strong password';
+          passwordStrengthClass = 'alert-success';
+        }
+
+        passwordStrengthContainer.textContent = passwordStrengthText;
+        passwordStrengthContainer.className = `password-strength ${passwordStrengthClass}`;
+      });
+
+      // التحقق من تطابق كلمة السر مع تأكيد كلمة السر
+      confirmPasswordInput.addEventListener('input', function () {
+        const confirmPassword = confirmPasswordInput.value;
+        if (confirmPassword !== passwordInput.value) {
+          confirmPasswordInput.setCustomValidity("Passwords don't match");
+          confirmPasswordInput.style.borderColor = 'red';
+        } else {
+          confirmPasswordInput.setCustomValidity('');
+          confirmPasswordInput.style.borderColor = '';
+        }
+      });
+
+      // التحقق من تعبئة الحقول
+      const form = document.querySelector('.loginForm');
+      form.addEventListener('submit', function (event) {
+        const requiredFields = form.querySelectorAll('[required]');
+        let valid = true;
+
+        requiredFields.forEach(function (field) {
+          if (!field.value.trim()) {
+            valid = false;
+            const errorMessage = document.createElement('div');
+            errorMessage.classList.add('error-message');
+            errorMessage.textContent = 'This field is required';
+            field.parentNode.appendChild(errorMessage);
+          }
+        });
+
+        if (!valid) {
+          event.preventDefault();
+        }
+      });
+
+      function checkPasswordStrength(password) {
+        let strength = 0;
+        if (password.length >= 8) strength += 25;
+        if (/[A-Z]/.test(password)) strength += 25;
+        if (/[0-9]/.test(password)) strength += 25;
+        if (/[^A-Za-z0-9]/.test(password)) strength += 25;
+        return strength;
+      }
+    });
+  </script>
+
+
+  <style>
+    .password-strength {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .alert-danger {
+      color: red;
+    }
+
+    .alert-warning {
+      color: orange;
+    }
+
+    .alert-success {
+      color: green;
+    }
+
+    span#passwordStrengthContainer {
+      margin: 10px 0;
+      position: absolute;
+      padding: 0 10px;
+      font-size: smaller;
+      border-radius: 3px;
+    }
+
+
+    button.toggle-password {
+      background: no-repeat;
+      border: none;
+      position: relative;
+      left: -5px;
+      top: -38px;
+      float: right;
+    }
+  </style>
+
+
+
+  <script>
+    window.onload = function () {
+      window.print();
+    }
+  </script>
+</body>
+
+</html>
