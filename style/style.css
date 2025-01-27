@@ -5087,9 +5087,9 @@ p:empty {
   padding-right: 0;
 }
 
-.hidden {
+/* .hidden {
   display: none !important;
-}
+} */
 
 .weight-300 {
   font-weight: 300 !important;
@@ -39436,11 +39436,10 @@ h2.promo-slider-title {
 /*  */
 
 .main-body-sidebar-secondary {
-  background: var(--secondary-block-bg);
+  background: #242424;
   background-image: url(https://3mmarx3.github.io/ineed_unlock/img/logo/Screenshot%202024-05-01%20202340.png);
   background-size: cover;
   background-position: center center;
-  background: red;
 }
 
 label {

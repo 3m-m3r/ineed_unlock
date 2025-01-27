@@ -1,386 +1,534 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../style/order.css" />
-    <link rel="stylesheet" href="../style/main.css" />
-  </head>
+<html lang="en" class="lagom-dark-mode">
 
-  <body>
-    <nav id="nav_bar"></nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <div class="header">
-      <div class="main_header">
-        <ul>
-          <li>
-            <h2 class="apple">
-              All Category Service For Apple Service
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-apple"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"
-                ></path>
-                <path
-                  d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"
-                ></path>
-              </svg>
-            </h2>
-          </li>
-          <li><a href="#">Remove Apple id </a></li>
+  <link rel="stylesheet" href="../style/style.css">
 
-          <li><a href="#">Baypass iCloud </a></li>
+</head>
 
-          <li><a href="#">Unlocke Network </a></li>
-          <li><a href="#">Finale Remove MDM </a></li>
-          <li><a href="#">Baypass MDM </a></li>
-          <li><a href="#">Ramdisk Passcode or Hello ScreenBaypass </a></li>
-        </ul>
-      </div>
-    </div>
+<body>
 
-    <main class="main_div">
-      <div class="one">
-        <button class="back back_put">
-          <span class="span_svg">
-            <svg
-              width="25px"
-              height="25px"
-              viewBox="0 0 1024 1024"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill="#fffff"
-                d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
-              ></path>
-              <path
-                fill="#fffff"
-                d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
-              ></path></svg
-          ></span>
-          <p>Back to Service list</p>
-        </button>
+  <body class="lagom lagom-layout-top lagom-layout-condensed lagom-modern page-clientareahome page-user-logged">
+    <!-- main -->
+    <div class="app-main">
 
-        <div class="red">
-          <p>Categroy Name for Service Like ( Remove apple id )</p>
+      <div class="main-header">
+        <div class="container">
+          <h1 class="main-header-title Category">All Category Service For Apple Service</h1>
+          <div class="main-header-bottom">
+            <ol class="breadcrumb">
+              <li>
+                <a href="#" onclick="showDiv('div1')"> Remove Apple id </a>
+              </li>
+              <li class="active">/</li>
+
+              <li class="active" onclick="showDiv('div2')">Baypass iCloud</li>
+              <li class="active">/</li>
+
+              <li class="active" onclick="showDiv('div3')">Unlocke Network </li>
+              <li class="active">/</li>
+
+              <li class="active" onclick="showDiv('div3')">Finale Remove MDM </li>
+              <li class="active">/</li>
+
+              <li class="active" onclick="showDiv('div3')">Baypass MDM </li>
+
+            </ol>
+          </div>
         </div>
+      </div>
 
-        <h2 class="back" style="color: #004aad">
-          <div class="span_color"></div>
-          Service name Like ( iPhone x )
-        </h2>
 
-        <form action="#">
-          <div class="inp_li">
-            <label for="Numbmer">Serial Numbmer Or imei</label>
-            <input type="text" name="" id="Numbmer" />
-          </div>
-          <div class="inp_li">
-            <label for="device">Data for device</label>
-            <input type="text" name="" id="device" />
-          </div>
-          <div class="inp_li">
-            <label for="iCloud">Cheak iCloud - Case & Sold</label>
-            <input type="text" name="" id="iCloud" />
-          </div>
+      <div class="main-body">
+        <div class="container">
 
-          <div class="back back_put">
-            <label for="file" class="file-upload-label">
-              <div class="file-upload-design">
-                <svg viewBox="0 0 640 512" height="1em">
-                  <path
-                    d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-217c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39V392c0 13.3 10.7 24 24 24s24-10.7 24-24V257.9l39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0l-80 80z"
-                  ></path>
-                </svg>
-                <p>Upload Picture ( Screen for Device )</p>
+
+          <br>
+          <h1>Basic Check IMEI / SN ( INSTANT )</h1>
+
+
+
+
+          <div class="tiles swiper-container">
+            <div class=" swiper-wrapper">
+              <div class="col-md-12 swiper-slide">
+                <a class="tile" href="#">
+                  <div class="tile-icon-absolute">
+                    <i class="ls ls-hosting"></i>
+                  </div>
+                  <div class="tile-stat">Allowed types :</div>
+                  <div class="tile-title">ANY / iPad ANY / Watch ANY / MacBook ANY / iMAC ANY</div>
+                </a>
               </div>
-              <input id="file" type="file" />
-            </label>
+
+
+
+
+              <div class="section section-sm" id="containerNewUserSignup">
+                <div class="section-header">
+                  <h2 class="section-title">Personal Information</h2>
+                </div>
+                <div class="section-body" id="personalInformation">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail" class="label-required">IMEI / SN :
+                        </label>
+                        <input type="text" name="email" id="inputEmail" class="form-control" placeholder="IMEI / SN"
+                          required="">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group has-feedback" id="newPassword2">
+                        <label for="inputNewPassword2" class="label-required">E-mail :
+                        </label>
+                        <input type="email" name="password2" id="inputNewPassword2" class="form-control"
+                          autocomplete="off" placeholder="E-mail
+                " required="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination">
+
+
+              <div class="div_top">
+
+                <div class="flex_row">
+
+                  <div class="flex_">
+
+
+                    <div class="flex">
+                      <div class="div_class">
+                        <a class="tile" href="clientarea.php?action=domains">
+
+                          <div class="tile-stat">Need time :</div>
+                          <div class="tile-title">1-10 minutes</div>
+                        </a>
+                      </div>
+
+
+                      <div class="div_class">
+                        <a class="tile" href="#">
+
+                          <div class="tile-stat text-danger">Price : </div>
+                          <div class="tile-title">4.10* USD
+
+
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+
+
+                    <div class="flex_m">
+
+                      <div class="div_class" style="margin-bottom: 10px;">
+                        <a class="tile" href="clientarea.php?action=domains">
+
+                          <div class="tile-stat YOUTUBE">YOUTUBE</div>
+
+                        </a>
+                      </div>
+
+
+                      <div class="div_class">
+                        <a class="tile" href="#">
+
+
+                          <div class="tile-stat YOUTUBE">YOUTUBE</div>
+                        </a>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+
+                  <div class="div_class ">
+                    <a class="tile PIC" href="clientarea.php?action=domains">
+
+                      <div class="tile-title ">PIC</div>
+                    </a>
+                  </div>
+
+                </div>
+
+
+              </div>
+
+              <div class="div_class ">
+                <a class="tile PIC" href="clientarea.php?action=domains">
+
+                  <div class="tile-title ">Discrption</div>
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div class="flex">
-            <label class="label">
-              <input class="input" type="checkbox" />
-              <span class="circle"
-                ><svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  class="icon"
-                >
-                  <path
-                    d="M12 19V5m0 14-4-4m4 4 4-4"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                    stroke-linecap="round"
-                    stroke="currentColor"
-                  ></path>
-                </svg>
-                <div class="square"></div>
-              </span>
-              <p class="title">Download Tool</p>
-            </label>
-            <p>name like ( SMD TOOL )</p>
+          <br>
+
+
+          <!-- 
+  
+
+      <div class="div_class">
+        <a class="tile" href="clientarea.php?action=domains">
+          <div class="tile-icon-absolute">
+            <i class="ls ls-dns"></i>
           </div>
-        </form>
+          <div class="tile-stat">Need time :</div>
+          <div class="tile-title">1-10 minutes</div>
+        </a>
+      </div>
 
-        <!-- 000000000000 -->
+      <div class="div_class">
+        <a class="tile" href="clientarea.php?action=domains">
+          <div class="tile-icon-absolute">
+            <i class="ls ls-dns"></i>
+          </div>
+          <div class="tile-stat">Need time :</div>
+          <div class="tile-title">1-10 minutes</div>
+        </a>
+      </div>
 
-        <div class="Service_details">
-          <h2>Service details</h2>
-          <h2 class="back" style="color: #ff914d">
-            <span>.</span> Time : 5 day to 15 days
-          </h2>
+      <div class="div_class">
+        <a class="tile" href="#">
+          <div class="tile-icon-absolute">
+            <i class="icon-alert ls ls-exclamation-circle text-danger"></i>
+          </div>
+          <div class="tile-stat text-danger">Price : </div>
+          <div class="tile-title">4.10* USD
 
-          <h2 class="back" style="color: #00bf63">
-            <span>.</span> Success : 100%
-          </h2>
 
-          <a href="">Step 1 - cheak device in server and complet order</a>
-          <a href="">Step 1 - cheak device in server and complet order</a>
-          <a href="">Step 1 - cheak device in server and complet order</a>
-          <a href="">Step 1 - cheak device in server and complet order</a>
+          </div>
+        </a>
+      </div>
+ -->
+
+
+          <div class="login-wrapper">
+            <div class="login-body register" id="registration">
+
+
+              <form method="post" action="#" class="loginForm">
+
+
+
+
+                <div class="section section-sm">
+                  <div class="section-body">
+                    <div class="checkbox">
+                      <label>
+                        <input class="icheck-control accepttos" type="checkbox" name="accepttos" required="">
+                        <span class="label-required">I agree to the
+                          <a href="http://www.example.com/tos.html" target="_blank">Terms of Service</a></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-lg btn-primary btn-block">
+                    <span class="btn-text">Create The System</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <br>
+
+
+
+          </div>
+
+        </div>
+
+        <br>
+        <br>
+
+        <div class="main-footer">
+          <div class="footer-bottom">
+            <div class="container">
+              <div class="footer-copyright">
+                Copyright &copy; 2025 RS STUDIO. All Rights Reserved.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="tow">
-        <div class="link">
-          <div class="flex_yo">
-            <span
-              ><button class="Btn">
-                <span class="svgContainer">
-                  <svg
-                    viewBox="0 0 576 512"
-                    fill="white"
-                    height="1.6em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
-                    ></path>
-                  </svg>
-                </span>
-                <span class="BG"></span>
-              </button>
-            </span>
-            <p>Video Tutorial for Tihs Service - English</p>
-          </div>
 
-          <div class="flex_yo">
-            <span
-              ><button class="Btn">
-                <span class="svgContainer">
-                  <svg
-                    viewBox="0 0 576 512"
-                    fill="white"
-                    height="1.6em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
-                    ></path>
-                  </svg>
-                </span>
-                <span class="BG"></span>
-              </button>
-            </span>
-            <p>فديو لشرح كيفية استخدام الخدمة - باللغة العربية</p>
-          </div>
-        </div>
 
-        <div class="div_img"></div>
 
-        <div class="Price_Service">
-          <h2>Price Service</h2>
 
-          <h2 class="price">100$</h2>
-
-          <div class="cak">
-            <input type="checkbox" />
-            <p>I agree to the terms of service</p>
-          </div>
-          <button class="Palce_Order"><a href="#">Palce Order</a></button>
-        </div>
-        <div class="Share">
-          <div class="text_Share">
-            <h2>Share Service</h2>
-            <p>Share URL Link with frinds</p>
-          </div>
-          <div class="icon_Share">
-            <svg viewBox="0 0 448 512">
-              <path
-                d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z"
-              ></path>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <style>
-      .header {
-        margin-top: 10vh;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        background: #eee;
-        border-top: 5px solid #d8dce2;
-        border-bottom: 5px solid #d8dce2;
-        padding: 10px;
-      }
-
-      .header h2 {
-        font-size: large;
-      }
-
-      .header ul {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        list-style: none;
-        flex-wrap: wrap;
-      }
-
-      .header ul > *:not(:first-child) {
-        border-left: 3px solid red;
-        padding-left: 10px;
-      }
-
-      .header ul li a {
-        color: black;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Lato", sans-serif;
-        color: #202020;
-        font-size: 85.5%;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        text-align: left;
-        overflow: hidden;
-      }
-
-      table td,
-      table th {
-        border-top: 1px solid #ecf0f1;
-        padding: 10px;
-      }
-
-      table td {
-        border-left: 1px solid #ecf0f1;
-        border-right: 1px solid #ecf0f1;
-      }
-
-      table th {
-        /* background-color: #4ECDC4; */
-      }
-
-      table tr:nth-of-type(even) td {
-        background-color: #eee;
-      }
-
-      table .total th {
-        background-color: white;
-      }
-
-      table .total td {
-        text-align: right;
-        font-weight: 700;
-      }
-
-      .mobile-header {
-        display: none;
-      }
-
-      @media only screen and (max-width: 300px) {
-        table tr th:not(:first-child) {
-          width: 50%;
-          font-size: 14px;
+      <style>
+        a.tile {
+          display: block;
         }
 
-        table tr td:not(:first-child) {
-          width: 50%;
-          font-size: 14px;
-        }
-      }
+        a.tile {
 
-      /* .main_servic{
-    padding: 0% 10%;
+          padding: 10px;
+        }
+
+        .tile-stat {
+          text-align: left;
+          color: white;
+          font-size: large;
+          font-weight: bold;
+        }
+
+        .tile-title {
+          text-align: left;
+          font-weight: bold;
+        }
+
+        .tile {
+          margin: 0;
+          padding: 25px !important;
+        }
+
+        span.btn-text {
+          font-family: sans-serif;
+        }
+
+
+        a.tile {
+          border: 1px solid #424242;
+          background: #24242480;
+        }
+
+
+        a.tile:hover,
+        input#inputNewPassword2,
+        input#inputEmail {
+          border: 1px solid #424242;
+          background: #24242480;
+
+
+        }
+
+
+        label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+
+        @media screen and (max-width:992px) {
+          .tiles .tile-stat {
+            font-size: medium;
+          }
+
+          h1 {
+            font-size: medium;
+          }
+        }
+
+
+
+        .tiles.swiper-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+
+        div#personalInformation .row {
+          display: block;
+        }
+
+        .swiper-pagination {
+          display: flex;
+          /* align-items: center; */
+        }
+
+        /* .flex {
+    display: flex
+;
+
 } */
-      .titel {
-        border-left: 5px solid red;
-        padding-left: 10px;
-        margin: 10px 0;
-      }
 
-      .main_header {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 0 13%;
-        font-size: small;
-      }
+        /* .flex {
+    display: flex
+;
+} */
 
-      .apple,
-      .Order a {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-      }
+        .swiper-pagination {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          gap: 20px;
+        }
 
-      .Order .bi-arrow-right-circle-fill {
-        fill: #ff5757;
-        width: 25px;
-        height: 25px;
-      }
 
-      .Order .bi-circle-fill {
-        fill: #ff5757;
-        width: 10px;
-        height: 10px;
-      }
+        /* .div_top {
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+} */
 
-      .apple svg {
-        fill: #959595;
-      }
+        /* .flex_row {
+    display: grid
+;
+    grid-template-rows: 1fr 1fr;
+} */
 
-      .iphone {
-        color: #004aad;
-        font-weight: bold;
-      }
+        @media (min-width: 768px) {
+          .col-md-6 {
+            flex: 0 0 50%;
+            max-width: 100%;
+          }
+        }
 
-      .Order a {
-        font-weight: bold;
-        color: black;
-      }
+        .flex {
+          display: grid;
 
-      table tr:nth-of-type(even) td {
-        background-color: #eee;
-        border-top: 2px solid #d8dce2;
-        border-bottom: 2px solid #d8dce2;
-      }
+          grid-template-columns: 1fr 1fr !important;
+          gap: 10px;
+          margin-bottom: 10px;
+        }
 
-      main.main_servic {
-        padding: 0 13%;
-        margin-bottom: 10vh;
-      }
-    </style>
+        .flex_row {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
 
-    <script src="/ineed_unlock/script/header.js"></script>
+        .tile-stat.YOUTUBE {
+          text-align: center;
+          padding: 0;
+          margin: 0;
+        }
+
+        a.tile {
+          padding: 15px !important;
+          margin: 5px 0 !important;
+        }
+
+        a.tile.PIC {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .tiles .tile {
+          margin: 0 !important;
+        }
+
+
+        .col,
+        .col-1,
+        .col-2,
+        .col-3,
+        .col-4,
+        .col-5,
+        .col-6,
+        .col-7,
+        .col-8,
+        .col-9,
+        .col-10,
+        .col-11,
+        .col-12,
+        .col-auto,
+        .col-lg,
+        .col-lg-1,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12,
+        .col-lg-auto,
+        .col-md,
+        .col-md-1,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12,
+        .col-md-auto,
+        .col-sm,
+        .col-sm-1,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12,
+        .col-sm-auto,
+        .col-xl,
+        .col-xl-1,
+        .col-xl-2,
+        .col-xl-3,
+        .col-xl-4,
+        .col-xl-5,
+        .col-xl-6,
+        .col-xl-7,
+        .col-xl-8,
+        .col-xl-9,
+        .col-xl-10,
+        .col-xl-11,
+        .col-xl-12,
+        .col-xl-auto {
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+
+        h2.section-title {
+          margin: 0;
+          padding: 0;
+          margin: 10px auto;
+        }
+
+        div#personalInformation .row {
+          display: block;
+          padding: 0 15px;
+        }
+
+        @media screen and (max-width:992px) {
+          .tiles.swiper-container {
+            display: block;
+          }
+
+          .swiper-wrapper {
+            display: block;
+          }
+
+          .flex_row {
+            display: block;
+          }
+
+          a.tile.PIC {
+            margin-top: 10px !important;
+          }
+        }
+      </style>
   </body>
+
 </html>
