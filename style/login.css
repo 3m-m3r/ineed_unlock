@@ -14,6 +14,10 @@
   font-family: "Segoe UI", system-ui, sans-serif;
 }
 
+body {
+  background: #121212;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -36,12 +40,7 @@
 
 .auth-sidebar {
   width: 40%;
-  background: linear-gradient(
-      135deg,
-      rgba(79, 70, 229, 0.9),
-      rgba(129, 140, 248, 0.9)
-    ),
-    url("/api/placeholder/400/600") center/cover;
+  background: #1b1b1b;
   padding: 40px;
   color: white;
   display: flex;
@@ -57,10 +56,11 @@
 .auth-main {
   width: 60%;
   padding: 40px;
-  background: white;
+
   position: relative;
   display: flex;
   align-items: center;
+  color: white;
 }
 
 .auth-form {
@@ -75,7 +75,7 @@
 
 .form-header h1 {
   font-size: 2em;
-  color: var(--text-color);
+  color: white;
   margin-bottom: 10px;
 }
 
@@ -100,11 +100,9 @@
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-}
-
-.social-button:hover {
-  background: #e5e7eb;
-  transform: translateY(-2px);
+  border: 1px solid #424242;
+  background: #24242480;
+  color: white;
 }
 
 .divider {
@@ -120,7 +118,7 @@
   top: 50%;
   width: 45%;
   height: 1px;
-  background: #e5e7eb;
+  background: #1b1b1b;
 }
 
 .divider::before {
@@ -138,13 +136,16 @@
   align-items: center;
   gap: 10px;
   padding: 0 15px;
-  border: 2px solid #e5e7eb;
+
   border-radius: 8px;
   font-size: 1em;
   transition: all 0.3s ease;
   background: white;
 
   width: 100%;
+  background: #24242480;
+  color: white;
+  border: 1px solid #424242;
 }
 
 .iti {
