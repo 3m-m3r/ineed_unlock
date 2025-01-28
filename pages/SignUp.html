@@ -1,211 +1,162 @@
 <!DOCTYPE html>
-<html lang="en" class="lagom-dark-mode">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../style/style.css" />
-
   <!--   CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
 
   <!--   JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <link rel="stylesheet" href="../style/login.css">
 </head>
 
 <body>
 
-  <div class="app-main">
-    <div class="main-body main-body-has-sidebar main-body-has-sidebar-left">
-      <div class="main-body-sidebar main-body-sidebar-secondary">
-        <div class="sidebar-logo logo-container">
-          <a class="logo logo-login"
-            logo-login-light-mode="/lagom/templates/lagom2/assets/img/logo/logo_big_inverse.987257187.svg"
-            logo-login-dark-mode="/lagom/templates/lagom2/assets/img/logo/logo_big_inverse.987257187.svg" href="#"><img
-              class="logo-login-img" src="/lagom/templates/lagom2/assets/img/logo/logo_big_inverse.987257187.svg"
-              title="RS STUDIO" alt="RS STUDIO" /></a>
-        </div>
-        <div class="sidebar-content">
-          <h2 class="sidebar-title">What's new</h2>
-          <div class="sidebar-swiper swiper-container">
-            <div class="swiper-wrapper">
-              <div class="sidebar-news swiper-slide">
-                <span class="sidebar-news-date">Dec 13, 2021</span>
-                <a class="sidebar-news-title h3" href="#">Presentation Article Content</a>
-                <div class="sidebar-news-desc">
-                  <p>
-                    This is example artcile, designed to present diffrent
-                    article elements, which can be added in WHMCS usign
-                    "Rich-Text Editor". Phasellus risus nibh Lorem ipsum dolor
-                    sit amet, consectetur adipiscing elit. Fusce finibus orci
-                    sem. Sed vitae tellus ultrices, porta augue eu, sodal...
-                  </p>
-                </div>
-              </div>
-
-
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <div class="auth-container">
+    <div class="auth-sidebar">
+      <div>
+        <h2>Welcome Back !</h2>
+        <p>Access your account and manage your portfolio with our secure authentication system.</p>
       </div>
-      <div class="main-body-content">
-        <div class="login login-lg">
-
-
-          <div class="login-wrapper">
-            <div class="login-body register" id="registration">
-              <h1 class="login-title">Register</h1>
-
-              <form method="post" class="loginForm" action="/lagom/register.php" role="form" name="orderfrm"
-                id="frmCheckout">
-                <input type="hidden" name="token" value="66f0f31a75b336e82d3ff89eac24adbedc3bec80" />
-                <input type="hidden" name="register" value="true" />
-                <div class="section section-sm" id="containerNewUserSignup">
-                  <div class="section section-sm">
-                    <div class="section-header">
-                      <h2 class="section-title">Personal Information</h2>
-                    </div>
-                    <div class="section-body" id="personalInformation">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="inputFirstName" class="label-required">
-                              First Name
-                            </label>
-                            <input type="text" name="firstname" id="inputFirstName" class="form-control"
-                              placeholder="Ammar " value="" required autofocus />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="inputLastName" class="label-required">
-                              Last Name
-                            </label>
-                            <input type="text" name="lastname" id="inputLastName" class="form-control"
-                              placeholder="Ahmed" value="" required />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="inputEmail" class="label-required">
-                              Email Address
-                            </label>
-                            <input type="email" name="email" id="inputEmail" class="form-control"
-                              placeholder="info@gmail.com" value="" />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="inputPhone" class="label-required">
-                              Phone Number
-                            </label>
-                            <input type="tel" name="phonenumber" id="inputPhone" class="form-control" value="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="section section-sm" id="containerNewUserSecurity">
-                  <div id="containerPassword" class="row">
-                    <div id="passwdFeedback" style="display: none"
-                      class="alert alert-lagom alert-info text-center col-md-12"></div>
-                    <div class="col-md-6">
-                      <div class="form-group has-feedback" id="newPassword1">
-                        <div class="password-content password-content-top password-content-group">
-
-
-                          <div class="progress m-t-0" id="passwordStrengthBar" style="display: none">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                              aria-valuemax="100">
-
-
-                            </div>
-                          </div>
-
-
-                          Password
-                          </span>
-                        </div>
-                        <div class="input-password-strenght">
-                          <input type="password" name="password" id="inputNewPassword1" data-error-threshold="50"
-                            data-warning-threshold="75" class="form-control" placeholder="********"
-                            autocomplete="off" />
-                        </div>
-
-
-
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group has-feedback" id="newPassword2">
-                        <label for="inputNewPassword2" class="label-required">
-                          Confirm Password
-                        </label>
-                        <input type="password" name="password2" placeholder="********" id="inputNewPassword2"
-                          class="form-control" placeholder="" autocomplete="off" />
-                        <div id="inputNewPassword2Msg"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="section section-sm">
-                  <div class="section-header">
-                    <h2 class="section-title">Join our mailing list</h2>
-                    <p class="section-desc">
-                      We would like to send you occasional news, information
-                      and special offers by email. Choose below whether you
-                      want to join our mailing list. You can unsubscribe at
-                      any time.
-                    </p>
-                  </div>
-                  <div class="panel panel-switch m-w-xs">
-                    <div class="panel-body">
-                      <span class="switch-label">Receive Emails: </span>
-                      <label class="switch switch--lg switch--text">
-                        <input class="switch__checkbox" type="checkbox" name="marketingoptin" value="1" checked />
-                        <span class="switch__container"><span class="switch__handle"></span></span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="section section-sm">
-                  <div class="section-body">
-                    <div class="checkbox">
-                      <label>
-                        <input class="icheck-control accepttos" type="checkbox" name="accepttos" />
-                        <span class="label-required">I have read and agree to the
-                          <a href="#" target="_blank">Terms of Service</a></span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-actions">
-                  <button type="submit" class="btn btn-lg btn-primary btn-block">
-                    <span class="btn-text"> Register </span>
-                  </button>
-                </div>
-              </form>
-            </div>
-            <br>
-            <div class="login-footer">
-              <div class="text-center text-light">
-                Already registered with us?
-                <a href="./Login.html">Sign In</a>
-                <span class="text-lowercase">Or</span>
-                <a href="./SignUp.html">Reset Password</a>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
+      <div>
+        <p>Protected by advanced encryption and multi-factor authentication.</p>
       </div>
     </div>
+
+    <div class="auth-main">
+      <form class="auth-form" id="authForm">
+        <div class="form-header">
+          <h1>Sign In</h1>
+          <p>Continue with your preferred method</p>
+        </div>
+
+        <div class="social-buttons">
+          <button type="button" class="social-button" onclick="socialSignIn('google')">
+            <i class="fab fa-google"></i>
+          </button>
+          <button type="button" class="social-button" onclick="socialSignIn('facebook')">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button type="button" class="social-button" onclick="socialSignIn('apple')">
+            <i class="fab fa-apple"></i>
+          </button>
+        </div>
+
+        <div class="divider">or</div>
+
+
+        <div class="flex">
+          <div class="form-group">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+            </svg>
+            <input type="text" class="form-control" id="irst_Name" placeholder="First Name" required>
+          </div>
+
+          <div class="form-group">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+            </svg>
+            <input type="text" class="form-control" id="Last_Name" placeholder="Last Name" required>
+          </div>
+
+
+
+
+        </div>
+
+        <div class="form-group">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+          </svg>
+          <input type="email" class="form-control" id="email" placeholder="Email address" required>
+        </div>
+
+
+
+        <div class="form-group">
+
+          <input type="tel" class="form-control" name="phonenumber" id="inputPhone" required placeholder="tel">
+        </div>
+
+
+
+        <div class="flex">
+          <div class="form-group">
+            <i class="far fa-eye password-toggle" id="passwordToggle"></i>
+
+            <input type="password" name="password" id="inputNewPassword1" data-error-threshold="50"
+              data-warning-threshold="75" class="form-control" placeholder="********" autocomplete="off" />
+
+          </div>
+
+
+          <div class="form-group">
+            <i class="far fa-eye password-toggle" id="passwordToggle"></i>
+            <input type="password" name="password2" placeholder="********" id="inputNewPassword2" class="form-control"
+              placeholder="" autocomplete="off" />
+
+
+
+          </div>
+          <div id="inputNewPassword2Msg"></div>
+
+        </div>
+
+        <div class="checkbox-container">
+          <div class="custom-checkbox" id="rememberMe">
+            <i class="fas fa-check"></i>
+          </div>
+          <label>Remember me</label>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">
+          <span>Sign In</span>
+          <div class="loader">
+            <i class="fas fa-spinner fa-spin"></i>
+          </div>
+        </button>
+
+        <div class="error-message" id="errorMessage"></div>
+        <div class="success-message" id="successMessage"></div>
+
+        <div class="otp-container" id="otpContainer">
+          <p>Enter the verification code sent to your email</p>
+          <div class="otp-inputs">
+            <input type="text" maxlength="1" class="otp-input" data-index="1">
+            <input type="text" maxlength="1" class="otp-input" data-index="2">
+            <input type="text" maxlength="1" class="otp-input" data-index="3">
+            <input type="text" maxlength="1" class="otp-input" data-index="4">
+          </div>
+          <p>Didn't receive the code? <a href="#" onclick="resendOTP()">Resend</a></p>
+        </div>
+
+        <div class="terms">
+          By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="switch-form">
+          Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a>
+        </div>
+      </form>
+    </div>
   </div>
+
+
+
 
 
 
@@ -330,44 +281,6 @@
       }
     });
   </script>
-
-
-  <style>
-    .password-strength {
-      font-size: 14px;
-      margin-top: 5px;
-    }
-
-    .alert-danger {
-      color: red;
-    }
-
-    .alert-warning {
-      color: orange;
-    }
-
-    .alert-success {
-      color: green;
-    }
-
-    span#passwordStrengthContainer {
-      margin: 10px 0;
-      position: absolute;
-      padding: 0 10px;
-      font-size: smaller;
-      border-radius: 3px;
-    }
-
-
-    button.toggle-password {
-      background: no-repeat;
-      border: none;
-      position: relative;
-      left: -5px;
-      top: -38px;
-      float: right;
-    }
-  </style>
 
 
 
