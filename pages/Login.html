@@ -1,121 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <link rel="stylesheet" href="../style/login.css" />
+  </head>
 
-  <link rel="stylesheet" href="../style/login.css">
-  
-</head>
-
-<body>
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <div class="auth-container">
-    <div class="auth-sidebar">
-      <div>
-        <h2>Welcome Back !</h2>
-        <p>Access your account and manage your portfolio with our secure authentication system.</p>
+  <body>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <div class="auth-container">
+      <div class="auth-sidebar">
+        <div>
+          <h2>Welcome Back !</h2>
+          <p>
+            Access your account and manage your portfolio with our secure
+            authentication system.
+          </p>
+        </div>
+        <div>
+          <p>
+            Protected by advanced encryption and multi-factor authentication.
+          </p>
+        </div>
       </div>
-      <div>
-        <p>Protected by advanced encryption and multi-factor authentication.</p>
+
+      <div class="auth-main">
+        <form class="auth-form" id="authForm">
+          <div class="form-header">
+            <h1>Sign In</h1>
+            <p>Continue with your preferred method</p>
+          </div>
+
+          <div class="social-buttons">
+            <button
+              type="button"
+              class="social-button"
+              onclick="socialSignIn('google')"
+            >
+              <i class="fab fa-google"></i>
+            </button>
+            <button
+              type="button"
+              class="social-button"
+              onclick="socialSignIn('facebook')"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <button
+              type="button"
+              class="social-button"
+              onclick="socialSignIn('apple')"
+            >
+              <i class="fab fa-apple"></i>
+            </button>
+          </div>
+
+          <div class="divider">or</div>
+
+          <div class="form-group">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-envelope"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+              />
+            </svg>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Email address"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <i class="far fa-eye password-toggle" id="passwordToggle"></i>
+
+            <input
+              type="password"
+              name="password"
+              id="inputNewPassword1"
+              data-error-threshold="50"
+              data-warning-threshold="75"
+              class="form-control"
+              placeholder="********"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="checkbox-container">
+            <div class="custom-checkbox" id="rememberMe">
+              <i class="fas fa-check"></i>
+            </div>
+            <label>Remember me</label>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span>Sign In</span>
+            <div class="loader">
+              <i class="fas fa-spinner fa-spin"></i>
+            </div>
+          </button>
+
+          <div class="error-message" id="errorMessage"></div>
+          <div class="success-message" id="successMessage"></div>
+
+          <div class="otp-container" id="otpContainer">
+            <p>Enter the verification code sent to your email</p>
+            <div class="otp-inputs">
+              <input
+                type="text"
+                maxlength="1"
+                class="otp-input"
+                data-index="1"
+              />
+              <input
+                type="text"
+                maxlength="1"
+                class="otp-input"
+                data-index="2"
+              />
+              <input
+                type="text"
+                maxlength="1"
+                class="otp-input"
+                data-index="3"
+              />
+              <input
+                type="text"
+                maxlength="1"
+                class="otp-input"
+                data-index="4"
+              />
+            </div>
+            <p>
+              Didn't receive the code?
+              <a href="#" onclick="resendOTP()">Resend</a>
+            </p>
+          </div>
+
+          <div class="terms">
+            By continuing, you agree to our <a href="#">Terms of Service</a> and
+            <a href="#">Privacy Policy</a>
+          </div>
+
+          <div class="switch-form">
+            Don't have an account?
+            <a href="#" onclick="toggleForm()">Sign Up</a>
+          </div>
+        </form>
       </div>
     </div>
 
-    <div class="auth-main">
-      <form class="auth-form" id="authForm">
-        <div class="form-header">
-          <h1>Sign In</h1>
-          <p>Continue with your preferred method</p>
-        </div>
-
-        <div class="social-buttons">
-          <button type="button" class="social-button" onclick="socialSignIn('google')">
-            <i class="fab fa-google"></i>
-          </button>
-          <button type="button" class="social-button" onclick="socialSignIn('facebook')">
-            <i class="fab fa-facebook-f"></i>
-          </button>
-          <button type="button" class="social-button" onclick="socialSignIn('apple')">
-            <i class="fab fa-apple"></i>
-          </button>
-        </div>
-
-        <div class="divider">or</div>
-
-
-        <div class="form-group">
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-          </svg>
-          <input type="email" class="form-control" id="email" placeholder="Email address" required>
-        </div>
-
-
-
-        <div class="form-group">
-          <i class="far fa-eye password-toggle" id="passwordToggle"></i>
-
-          <input type="password" name="password" id="inputNewPassword1" data-error-threshold="50"
-            data-warning-threshold="75" class="form-control" placeholder="********" autocomplete="off" />
-
-        </div>
-
-
-
-        <div class="checkbox-container">
-          <div class="custom-checkbox" id="rememberMe">
-            <i class="fas fa-check"></i>
-          </div>
-          <label>Remember me</label>
-        </div>
-
-        <button type="submit" class="submit-btn" id="submitBtn">
-          <span>Sign In</span>
-          <div class="loader">
-            <i class="fas fa-spinner fa-spin"></i>
-          </div>
-        </button>
-
-        <div class="error-message" id="errorMessage"></div>
-        <div class="success-message" id="successMessage"></div>
-
-        <div class="otp-container" id="otpContainer">
-          <p>Enter the verification code sent to your email</p>
-          <div class="otp-inputs">
-            <input type="text" maxlength="1" class="otp-input" data-index="1">
-            <input type="text" maxlength="1" class="otp-input" data-index="2">
-            <input type="text" maxlength="1" class="otp-input" data-index="3">
-            <input type="text" maxlength="1" class="otp-input" data-index="4">
-          </div>
-          <p>Didn't receive the code? <a href="#" onclick="resendOTP()">Resend</a></p>
-        </div>
-
-        <div class="terms">
-          By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
-        </div>
-
-        <div class="switch-form">
-          Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a>
-        </div>
-      </form>
-    </div>
-  </div>
-
-
-
-  <!--  -->
-
-
-
-
-
-
-</body>
-
+    <!--  -->
+  </body>
 </html>
